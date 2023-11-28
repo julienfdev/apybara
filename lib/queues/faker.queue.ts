@@ -1,6 +1,6 @@
-import { MicroserviceOptions, Transport } from '@nestjs/microservices';
+import { Transport } from '@nestjs/microservices';
 
-export const fakerMicroserviceOptions: MicroserviceOptions = {
+export const fakerMicroserviceOptions = {
   transport: Transport.RMQ,
   options: {
     urls: ['amqp://localhost:5672/'],
