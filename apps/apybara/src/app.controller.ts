@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
-import { Capybara } from './interfaces/capybara.interface';
+import { Capybara } from 'lib/capybara.interface';
 
 @Controller()
 export class AppController {

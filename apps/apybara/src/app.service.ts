@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Capybara } from './interfaces/capybara.interface';
+import { Capybara } from '../../../lib/capybara.interface';
 
 @Injectable()
 export class AppService {
