@@ -1,4 +1,4 @@
-FROM node:alpine AS build
+FROM node AS build
 
 WORKDIR /build
 COPY package.json .
@@ -10,7 +10,7 @@ COPY . .
 
 RUN npx nest build faker
 
-FROM node:alpine AS run
+FROM node AS run
 
 WORKDIR /app
 
